@@ -1,0 +1,22 @@
+git --version
+
+git config --global user.name "some name"
+
+git config --global user.email some.mail@mail.com
+
+# init dir as git as managed dir:
+git init
+
+git status
+# (ls -al shows if .git dir exists)
+
+# add file to git management:
+git add file.ext
+# ("git add ." will add all files)
+
+# prepare changes before push to server:
+git commit -m "created some bug, we fucked the machine"
+
+git push -u origin master
+# (username:"github_user", password:"token_of_github")
+
